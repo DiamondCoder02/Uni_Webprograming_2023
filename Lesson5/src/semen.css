@@ -1,0 +1,129 @@
+* {
+	margin-top: 0;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-size: 15px;
+	line-height: 1.5;
+}
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin: auto;
+}
+
+header {
+	background-image: url(../res/header.jpg);
+	background-size: cover;
+	background-position: bottom;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+nav {
+	background-color: #5f5c79;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	padding: 10px 20px 10px 20px;
+}
+
+nav a {
+	color: rgba(255, 255, 255, 0.66);
+}
+
+nav li:hover {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+}
+
+main, aside {
+	margin: 35px;
+}
+
+aside {
+	width: 25%;
+	margin-left: 0;
+}
+
+main {
+	width: 75%;
+}
+
+main p {
+	text-align: justify;
+}
+
+h1, h2, h3 {
+	color: rgb(110, 110, 110);
+	margin-top: 0;
+}
+
+
+aside section {
+	background-color: #909;
+}
+
+footer {
+	background-color: #505;
+	color: #666;
+	text-align: center;
+	font-size: 70%;
+	padding: 25px;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* Hivatkozások */
+a {
+	color: #96738b;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.more {
+	background-color: #b88baa;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 50px;
+}
+.more:hover {
+	background-color: #96738b;
+	text-decoration: none;
+}
+
+.action {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 5px 10px;
+	border-radius: 50px;
+}
+
+.action:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
