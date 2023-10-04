@@ -149,11 +149,13 @@ table {
 	border: 1px solid yellow;
 	background-color: #fff;
 	border-collapse: collapse;
+	margin-bottom: 25px;
 }
 
 thead {
 	background-color: #dcdaeb;
 	color: #635f7e;
+	font-size: 80%;
 }
 
 th, td {
@@ -167,4 +169,17 @@ tbody tr {
 
 tbody tr :hover {
 	background-color: #f5f5f5;
+}
+
+tbody .price {
+	white-space: nowrap;
+}
+
+/* Galery */
+.gallery {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 25px;
+	display: flex;
+	flex-wrap: wrap;
 }
