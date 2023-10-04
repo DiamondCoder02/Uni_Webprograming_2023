@@ -127,3 +127,44 @@ a:hover {
 	background-color: rgba(255, 255, 255, 0.8);
 	text-decoration: none;
 }
+
+/* artickle your balls */
+article .gayShit {
+	font-weight: bold;
+	color: #999
+}
+
+article img {
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+
+article section {
+	border: 1px solid #666;
+	padding: 10px;
+}
+
+/* workForce */
+table {
+	border: 1px solid yellow;
+	background-color: #fff;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: #dcdaeb;
+	color: #635f7e;
+}
+
+th, td {
+	padding: 8px;
+}
+
+tbody tr {
+	border-bottom: 1px solid #919191;
+	transition: 0.3s;
+}
+
+tbody tr :hover {
+	background-color: #f5f5f5;
+}
