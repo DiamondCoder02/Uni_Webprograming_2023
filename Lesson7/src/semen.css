@@ -243,11 +243,24 @@ iframe {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: none;
+	opacity: 0;
+	transition: 0.5s;
+	visibility: hidden;
+}
+
+.imageViewer.visible {
+	opacity: 1;
+	visibility: visible;
 }
 
 .imageViewer img {
 	border: 15px solid #fff;
 	max-width: 90%;
 	max-height: 80%;
+	transition: 0.5s;
+	transform: scale(0.5);
+}
+
+.imageViewer.visible img {
+	transform: scale(1);
 }
