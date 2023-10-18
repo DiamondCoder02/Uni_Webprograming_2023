@@ -182,4 +182,72 @@ tbody .price {
 	margin-bottom: 25px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery li {
+	width: 24.5%;
+	margin-bottom: 0.66%;
+	overflow: hidden;
+}
+
+.gallery a {
+	display: block;
+	line-height: 0;
+	opacity: 0.75;
+	transition: 0.5s;
+}
+
+.gallery a:hover{
+	opacity: 1;
+	transform: scale(1.1);
+	/* box-shadow: 0 20px 30px -15px #000; */
+}
+
+.gallery img {
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+	display: block;
+}
+
+/* ishitframe */
+iframe {
+	width: 100%;
+	border: 0;
+	height: 300px;
+	margin-bottom: 25px;
+}
+
+.details{
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+.showMore {
+	color: #96738b;
+}
+.showMore:hover {
+	text-decoration: underline;
+}
+
+.imageViewer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.imageViewer img {
+	border: 15px solid #fff;
+	max-width: 90%;
+	max-height: 80%;
 }

@@ -20,7 +20,7 @@ body {
 }
 
 header {
-	background-image: url(res/header.jpg);
+	background-image: url(../_pictures/res/header.jpg);
 	background-size: cover;
 	background-position: bottom;
 	text-align: center;
