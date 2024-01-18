@@ -1,0 +1,82 @@
+        </div>
+	</main>
+
+	<aside>
+		<div class="inside">
+			
+			<div>
+<?php
+
+$open = 8;
+$close = 16;
+
+$text = "Ügyfélszolgálatunk jelenleg elérhető";
+$now = (int)date("H");
+if($now < $open)
+{
+	$next = $open - $now;
+	$text = "Ügyfélszolgálatunk jelenleg még zárva tart. Legközelebb ". $next ." óra múlva léphet ismét kapcsolatba velünk.";
+}
+else
+if($now >= $close)
+{
+	$next = (24 - $now) + $open;
+	$text = "Ügyfélszolgálatunk a mai napon már nem elérhető. Legközelebb ". $next ." óra múlva léphet ismét kapcsolatba velünk.";
+}
+
+echo '<section>
+		<h3>Ügyfélszolgálat</h3>
+		<p>Telefon: +36 30 123 45 67</p>
+		<p>Nyitvatartás: '. $open .' órától '. $close .' óráig</p>
+		<p>'. $text .'</p>
+	</section>';
+
+?>			
+				<section>
+					<h3>Ajánlatkérés</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at, laborum aut ducimus nesciunt pariatur? Facere dolorem fuga, totam pariatur nemo libero earum iusto in enim accusantium est eligendi amet, dignissimos, dolores.</p>
+				</section>
+				
+			</div>
+			
+			<ul class="features">
+				<li>
+					<img src="res/img/icon-delivery.png" alt="Teherautó">
+					<h3>Ingyenes kiszállítás</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, assumenda.</p>
+				</li>
+				<li>
+					<img src="res/img/icon-refund.png" alt="Visszatérítés">
+					<h3>Visszafizetési garancia</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, fuga eius, architecto est commodi rerum!</p>
+				</li>
+				<li>
+					<img src="res/img/icon-creditcard.png" alt="Bankkártya">
+					<h3>Bankkártyás fizetés</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe veritatis deserunt nemo fuga fugit neque quisquam laborum adipisci nulla culpa!</p>
+				</li>
+				
+			</ul>
+			
+		</div>
+	</aside>
+
+	<footer>
+		<div class="inside">
+			
+			<section class="info">
+				<h4>Lorem ipsum dolor</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quas dignissimos porro neque, voluptatem sunt excepturi accusantium provident illum quam!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</section>
+			
+			<section class="pages">
+				<h4>Oldaltérkép</h4>
+				<ul><?php printMenu(); ?></ul>
+			</section>
+			
+		</div>
+	</footer>
+	
+</body>
+</html>
